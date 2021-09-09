@@ -1,0 +1,36 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    exclude:
+      - 2012-12-28-response-status-codes.md
+    fields:
+      - type: string
+        name: category
+        label: Category
+      - type: string
+        name: url_path
+        label: Url Path
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: type
+        label: Type
+  post_1:
+    type: page
+    label: Post 1
+    folder: _posts
+    match:
+      - 2012-12-28-response-status-codes.md
+    fields:
+      - type: string
+        name: title
+        label: Title
